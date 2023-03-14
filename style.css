@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: #080808 ; 
+    color: #fff;
+}
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.container {
+    padding: 5px 5%;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+    
+}
+
+.logo {
+    width: 140px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #fff04f;
+    position: absolute;
+    left:0;
+    bottom: -6px; 
+    transition: width 0.3s ease-in-out;
+    
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text {
+  margin-top: 100px;
+  font-size: 30px;
+}
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+.header-text h1 span {
+    color: #b3ee11;
+}
+
+/* ---------------ABOUT---------------------------- */
+
+#about {
+    padding: 80px 0;
+    
+}
+.row {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.about-col-1 {
+   flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100% ;
+    border-radius: 15px ; 
+} 
+.about-col-2 {
+    flex-basis: 60% ; 
+}
+.sub-title {
+    font-size: 50px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px ;
+}
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #b3ee11;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+#express{
+    font-size: 25px;
+    vertical-align: 25px
+}
+.logo-redux{
+    vertical-align: -15px;
+}
+.logo-mongo {
+    width: 20%;
+    vertical-align: 20px;
+}
+.logo-postgres {
+    vertical-align: -25px;
+}
+.icons {
+    font-size: 5rem;
+}
+.tab-contents ul p {
+ margin: 5px;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+.tecnologies {
+    color: #b3ee11;
+    font-size: 20px;
+}
+#experience {
+   font-size: 20px;
+}
+#express {
+    color: #ffffff;
+}
+.titles__curse {
+  font-size: 20px;
+    color: #b3ee11;
+    
+}
+.tab-contents p span {
+    color: #ffffff;
+    font-size: 20px;
+}
+.tab-contents {
+    display: none;
+}
+.tab-contents.active-tab {
+    display: block;
+}
+
+/* -----------------PROYECTS-------------------------- */
+
+#proyects {
+    padding: 30px 0;
+}
+.proyects-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.proyects-list > div > div {
+    font-size: 30px;
+}
+.proyects-list > div {
+    
+    grid-column: 1/2;
+    font-size: 12px;
+    padding: 30px 15px 30px 20px;
+    background: #312c2c;
+    font-weight: 300;
+    border-right: 10px;
+    border-radius: 2px;
+    transition: background 0.5s, transform 0.5s ;
+}
+
+.proyects-list > div > h4 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    
+    
+}
+.proyects-list > div > p {
+    font-size: 14px;
+    margin-bottom: 12px;
+    
+}
+
+.container__a {
+    font-size: 24px;
+    margin: 10px 70px;  
+}
+.container__a > a {
+    color: #b3ee11;
+}
+.container__a > a:hover {
+    color: #fff;
+}
+.proyects-list > div:hover {
+    background: #9b9b1e;
+    color: #080808;
+    transform: translateY(-10px);
+}
+/* ----------- CONTACT ----------------------- */
+.contact-left {
+  flex-basis: 35%;
+}
+.contact-right {
+  flex-basis: 65%;
+}
+.contact-left > p {
+    margin: 30px 0px;
+}
+.contact-left p svg {
+    color: #b3ee11;
+
+    font-size: 25px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+.social-icons a:hover {
+    color: #b3ee11;
+    transform: translateY(-10px);
+}
+.btn.btn2 {
+    display: inline-block;
+    background-color: #abe411;
+    padding: 7px 15px;
+    text-decoration: none;
+    color: #080808;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    
+}
+
+.contact-right form {
+   width: 100%;
+   
+}
+form input,
+form textarea {
+   width: 100%;
+   border: 0;
+   outline: none;
+   background: #262626;
+   padding: 15px;
+   margin: 15px 0;
+   color: #fff;
+   font-size: 18px;
+   border-radius: 6px;
+}
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 30px;
+}
+.copyright svg {
+    color: rgb(201, 23, 23);
+}
+
+
+/* ----------------- Responsive ------------------ */
+#sidemenu p {
+    display: none;
+}
+@media only screen and (max-width:600px) {
+ #header {
+    background-image: url("images/background.phone.jpg");
+   }
+ .header-text {
+    
+    font-size: 16px;
+ }
+ .header-text h1 {
+    font-size:  40px;
+ }
+ #sidemenu p {
+    display: block;
+    font-size: 40px;
+    margin: 5px 30px;
+    
+}
+nav ul {
+    background:#b3ee11;
+    position: fixed;
+    top: 0%;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+}
+nav ul li {
+    display: block;
+    margin: 25px;
+}
+nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    
+    cursor: pointer;
+}
+.sub-title {
+    font-size: 40px;
+}
+.about-col-1,
+.about-col-2 {
+    flex-basis: 100%;
+}
+.about-col-2{
+    font-size: 14px;
+}
+.tab-links{
+    font-size: 16px;
+    margin-right: 20px;
+}
+.contact-left,
+.contact-right{
+    flex-basis: 100%;
+}
+.contact-right {
+    margin-top: 10px;
+}
+.copyright {
+    font-size: 14px;
+}
+}
