@@ -74,6 +74,7 @@ nav ul li a:hover::after{
 
 #about {
     padding: 80px 0;
+    background-color: #080808;
     
 }
 .row {
@@ -176,6 +177,7 @@ nav ul li a:hover::after{
 
 #proyects {
     padding: 30px 0;
+    background-color: #080808;
 }
 .proyects-list {
     width: 100%;
@@ -229,6 +231,9 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 }
 /* ----------- CONTACT ----------------------- */
+#contact {
+    background-color: #080808;
+}
 .contact-left {
   flex-basis: 35%;
 }
